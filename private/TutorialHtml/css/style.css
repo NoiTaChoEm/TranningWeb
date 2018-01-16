@@ -1,0 +1,107 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #48D011;
+	background-color: #CBC7D3;
+}
+
+.mainmenu {
+	width: 180px;
+	background: #F5F2CD;
+	float: left;
+}
+
+.mainmenu ul a li{
+	border: 1px solid #5E5B32;
+	font-size: 20px;
+	padding: 5px 10px;}
+.mainmenu ul a{
+	text-decoration: none;
+	color: #1D9F90; 
+}
+.mainmenu ul a li:hover {
+	color: #225CBB;
+	background: #CDC453;
+}
+
+/*
+*******************Content*************** 
+ */
+
+.content{
+	margin-left: 210px;
+	width: 80%;
+	border: 3px solid silver;
+}
+
+.content div.namelession{
+	text-align: center;
+}
+
+.content div.namelession h1{
+	font-size: 30px;
+	color: black;
+	background-color: #D3F4E9;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.content div.data{
+	height: 400px auto;
+	background: #F8FDFD;
+	padding: 50px;
+	font-size: 20px;
+}
+
+.content div.data ul{
+	list-style-type: square;
+}
+
+.content div.data ul li p{
+	margin-left: 20px;
+}
+
+.content div.data ul li p em{
+	margin-left: 30px;
+}
+
+
+.content div.data ul li ul{
+	list-style-type: circle;
+}
+
+.content div.data ul li ul li{
+	margin-left: 40px;
+}
+
+.content div.data ul li ul li p{
+	margin-left: 20px;
+}
+
+.content div.data ol li ol li ul{
+	list-style-type: circle;
+}
+
+.footpage {
+	margin-top: 30px;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.footpage h3{
+	text-align: center;
+}
+
+.footpage table{
+	font-weight: italic;
+	margin-top: 20px;
+	margin-left: 42%;
+}
+

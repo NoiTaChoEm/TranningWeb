@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML Form</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Tutorial HTML</h1>
+	<hr/><hr/><hr/><hr/>
+	<div class="mainmenu">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="introduction.html"><li>Introduction</li></a>
+			<a href="htmltags.html"><li>Html Tag</li></a>
+			<a href="htmllinks.html"><li>Html Link</li></a>
+			<a href="htmlmedia.html"><li>Html Media</li></a>
+			<a href="htmlframe.html"><li>Frame-Iframe</li></a>
+			<a href="htmltable.html"><li>Html Table</li></a>
+			<a href="htmlform.html"><li>Html Form</li></a>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="namelession">
+			<h1>Form - Biểu mẫu</h1>
+		</div>
+		<div class="data">
+		<ol type="I">
+			<li><b>Giới thiêuh về Form</b></li>
+				<ol type="1">
+					<li>Mục đích của form
+					<ul>
+						<li>Form dùng để nhập thông tin từ người dùng hay phản hồi thông tin của người dùng.</li>
+						<li>Dữ liệu được gửi đi có thể được xử lí ngay tại client hoặc xử lí trên server, kết quả cuối cùng được trả về cho người dùng.</li>
+						<li>Là các tương tác giữa người dùng với website</li>
+					</ul>
+					</li>
+					<li>Cách tạo: Sử dụng thẻ form<br /><pre><i>&ltform method="post"/"get" action="#">
+	Nội dung của form
+&lt/form></i></pre></li>
+					<li>Các thuộc tính của form
+					<table border="1" cellspacing="0">
+						<tr>
+							<td>Attributes</td>
+							<td>Values</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>action</td>
+							<td>url</td>
+							<td>Địa chỉ dẫn tới khi xử lí xong dữ liệu("page.html"/"#"/"")</td>
+
+						</tr>
+						<tr>
+							<td>method</td>
+							<td>"get"/"post"</td>
+							<td>Phương thức dùng để gửi dữ liệu đến địa chỉ url</td>
+						</tr>
+						<tr>
+							<td>name</td>
+							<td>name</td>
+							<td>Đặt tên cho form</td>
+						</tr>
+						<tr>
+							<td>target</td>
+							<td>"frame-name"<br/>"_blank"<br />"_self"</td>
+							<td>Chỉ định cửa sổ hiển thị kết quả(trong một frame/ cửa sổ mới/ cửa sổ hiện tại(mặc định))</td>
+						</tr>
+						<tr>
+							<td>enctype</td>
+							<td>"application/x-www-form-urlencoded"<br />"text/plain"<br />"multipart/form-data"</td>
+							<td>Quy định cách định dạng dữ liệu trước khi gửi</td>
+						</tr>
+					</table></li>
+				</ol>
+			<li><b>Các phần tử của form</b>
+			<hr /><h4 align="center">----------------Input Box----------------</h4>
+				<ol type="1">
+					<li>Textbox:Hộp nhập văn bản<br />
+						<img src="../Images/inputtext.png" /><br />
+						<img src="../images/textbox.png" />
+					</li>
+					<li>InputPassword: Những kí tự hiênt thị dạng dâu chấm và được mã hoá khi gửi lên server<br />
+						<img src="../images/inputpassword.png" /><br />
+						<img src="../images/password.png" />
+					</li>
+					<li>CheckBox: Hộp chọn, dùng để đánh dấu các lựa chọn trong cùng một bộ chọn<br />
+						<img src="../images/inputcheckbox.png" /><br />
+						<img src="../images/checkbox.png" />
+					</li>
+					<li>Radio Button: Cho phép chọn một lựa chọn trong bộ chọn<br />
+						<img src="../images/inputradio.png" /><br />
+						<img src="../images/radio.png" />
+					</li>
+					<li>Submit button: Tất cả nhưng thông tin người dùng nhập vào sẽ được xác nhận và gửi lên server khi kích chọn submit<br />
+						<img src="../images/inputsubmit.png" /><br />
+						<img src="../images/submit.png" />
+					</li>
+					<li>Reser Butto: Thiết lập lại giá trị ban đầu cho forn<br />
+						<img src="../images/inputreset.png" /><br />
+						<img src="../images/reset.png" />
+					</li>
+					<li>Button: Nút dùng để thực hiện các lệnh do người dùng đưa ra. Thường được xử lí với javascript hay jquery<br />
+						<img src="../images/inputbutton.png" /><br />
+						<img src="../images/button.png" />
+					</li>
+					<li>Hidden: Là các field mà người xem không thấy được trên trình duyệt nhưng là một phần tử của form. Dùng để lưu trữ các thông tin trong các form trước mà không muốnn người dùng cần phải nhập lại<br />
+						<img src="../images/inputhidden.png" /><br />
+						<img src="../images/hidden.png" />
+					</li>
+					</ol>
+				<hr /><h4 align="center">----------------Selection List----------------</h4>
+					<ol type="1">
+						<li>Dropdown menu(Combo Box)<br />
+							<img src="../images/dropdownmenu.png" /><br />
+							<img src="../images/dropdown.png" />
+						</li>
+						<li>List Box: Khi thêm thuộc tính multiple cho Combo box sẽ trở thành list box<br />
+							OPTGROUP: được sử dụng để tạo các nhóm riêng cho list<br />
+							<img src="../images/Listbox.png" /><br />
+							<img src="../images/list.png" />
+						</li>
+					</ol>
+				<hr /><h4 align="center">----------------Other----------------</h4>
+					<ol type="1">
+						<li>Text area: Hộp văn bản cho phép nhập nhiều dòng<br />
+							<img src="../images/textareacode.png" /><br />
+							<img src="../images/textarea.png" />
+						</li>
+						<li>Label: Nhãn dùng để tạo nhãn liên kết với thành phần của form đi kèm<br />
+							<img src="../images/labelcode.png" /><br />
+							<img src="../images/label.png" />
+						</li>
+						<li>Fieldset: Nhóm các thành phần của form vào thành một phần logic<br />
+							<img src="../images/fieldsetcode.png" /><br />
+							<img src="../images/fieldset.png" />
+						</li>
+						<li>Files: Lựa chọn file up lên. Còn tuỳ thuộc trình duyêt<br />
+							<img src="../images/filecode.png" /><br />
+							<img src="../images/file.png" />
+						</li>
+					</ol>
+			</li>
+		</ol>
+		</div>
+			
+	</div>
+	<div class="footpage" >
+		<h3>Contact me</h3>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>: Hoàng Văn Phú</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: hoangvanphu98@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td>: 0967669751</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:Gia Khánh - Gia Lộc - Hải Dương</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>v

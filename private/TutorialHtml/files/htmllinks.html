@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML Links</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Tutorial HTML</h1>
+	<hr/><hr/><hr/><hr/>
+	<div class="mainmenu">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="introduction.html"><li>Introduction</li></a>
+			<a href="htmltags.html"><li>Html Tag</li></a>
+			<a href="htmllinks.html"><li>Html Link</li></a>
+			<a href="htmlmedia.html"><li>Html Media</li></a>
+			<a href="htmlframe.html"><li>Frame-Iframe</li></a>
+			<a href="htmltable.html"><li>Html Table</li></a>
+			<a href="htmlform.html"><li>Html Form</li></a>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="namelession">
+			<h1>Link - Linh hồn web</h1>
+		</div>
+		<div class="data">
+			<ol type="I">
+				<li><b>Siêu liên kết</b>
+					<ol type="1">
+						<li>Giới thiệu về siêu liên kết
+							<ul>
+							<li>Link(Hyper Link): Cho phép nối liên kết giữa các phần tử với nhau nói chung, các trang web với nhau nói riêng trong hệ thống mạng.</li>
+							<li>Một liên kết gồm 3 thành phần chính:
+								<ul list-style="none">
+									<li>Nguồn dẫn: Chứa nội dung hiển thị, có thể là một trang web khác hoặc hộp thư nào đó.</li>
+									<li>Nhãn: Dòng văn bản hoặc hình ảnh là cách thức để chọn link.</li>
+									<li>Đích đến: Trang web cần tới.</li>
+								</ul>
+							</li>
+							</ul>
+						</li>
+						<li>Phân loại liên kết
+							<ul>
+							<li>Interal HyperLink(Liên kết trong): Là các liên kết với các thành phần trong cùng một tài liệu hoặc các trang trong cùng một website.</li>
+							<li>External HyperLink(Liên kết ngoài): Là liên kết đến các trang website khác, hoặc trong tổ chức hệ thống mạng.</li>
+							</ul>
+						</li>
+						<li>Tạo siêu liên kết
+							<p>-Cú pháp: &lta href="url">Nhãn&lt/a></p>
+							<p><ul>-Trong đó:<li>+url: địa chỉ của trang liên kết tới(URL tương đối hoặc URL tuyệt đối).</li><li>+Nhãn: Là phần dùng để chuyển trang</li></ul></p>
+						</li>
+						<li>Liên kết cục bộ
+							<ul>
+								<li>Mục đích: dùng để liên kết các thành phần trong cùng một trang web. Hay thường dùng làm chỉ mục, mục lục.</li>
+								<li>Các tạo gồm hai bước:
+									<ul>
+										<li>Tạo bookmark trong(địa chỉ tới): &lta name="namebookmark">Tiêu đề&lt/a>...</li>
+										<li>Tạo liên kết chỉ tới: &lta href="#nameboolmark">Nhãn&lt/a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Siêu liên kết bookmark
+							<p>-Cách thức tương tự với liên kết cục bộ. Khác biệt ở điểm bookmark mày được đặt ở trang web khác và liên kết sẽ đi tới điểm được đặt boolmark của trang đó.</p>
+							<p>-Tạo liên kết tới: &lta href="file.html#namebookmark">Nhãn&lt/a></p>
+						</li>
+						<li>Liên kết hộp thư
+							<p>-Cú pháp: &lta href="mailto: address@domain">Nhãn&lt/a></p>
+							<p>-Hoạt động: Kích hoạt chức năng thư điện tử của trình duyệt và hệ điều hành</p>
+						</li>
+						<li>Các thuôc tính của hyperlink
+							<table border="1">
+								<tr>
+									<td>Attribute</td>
+									<td>Value</td>
+									<td>Description</td>
+								</tr>
+								<tr>
+									<td>href</td>
+									<td>url</td>
+									<td>Địa chỉ trang chuyển tới</td>
+								</tr>
+								<tr>
+									<td>target</td>
+									<td>"_self"/"_blank"</td>
+									<td>Cách mở trang web: chuyển trang(mặc đinh)/Mở tab mới trên trình duyệt</td>
+								</tr>
+								<tr>
+									<td>name</td>
+									<td>"locationame"</td>
+									<td>Tên của thẻ. Sử dụng cho liên kết bookmark</td>
+								</tr>
+								<tr>
+									<td>tabindex</td>
+									<td>number</td>
+									<td>Quy định thứ tự cho tab liên kết</td>
+								</tr>
+								<tr>
+									<td>title</td>
+									<td>message</td>
+									<td>Comment, mô tả cho đường link trên trình duyệt</td>
+								</tr>
+							</table>
+							<i>*Lưu ý:<ul>
+								<li>Nên tạo chú thích cho đường link</li>
+								<li>Thống nhất một màu cho link trong cùng trang</li>
+								<li>Nên tạo biểu tượng khi trở tới các tài liệu: doc, pdf,...</li>
+								<li>Không tạo link tới trang web đang xây dưng</li>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+			
+	</div>
+	<div class="footpage" >
+		<h3>Contact me</h3>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>: Hoàng Văn Phú</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: hoangvanphu98@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td>: 0967669751</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:Gia Khánh - Gia Lộc - Hải Dương</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

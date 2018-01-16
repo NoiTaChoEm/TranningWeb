@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML Tags</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Tutorial HTML</h1>
+	<hr/><hr/><hr/><hr/>
+	<div class="mainmenu">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="introduction.html"><li>Introduction</li></a>
+			<a href="htmltags.html"><li>Html Tag</li></a>
+			<a href="htmllinks.html"><li>Html Link</li></a>
+			<a href="htmlmedia.html"><li>Html Media</li></a>
+			<a href="htmlframe.html"><li>Frame-Iframe</li></a>
+			<a href="htmltable.html"><li>Html Table</li></a>
+			<a href="htmlform.html"><li>Html Form</li></a>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="namelession">
+			<h1>Tags - Một số thẻ cơ bản</h1>
+		</div>
+		<div class="data">
+			<ol type="I">
+				<li><b>Thành phần bao quát trang</b>
+					<ol type="1">
+						<li>Thẻ xác định cấu trúc tài
+							<ul>
+								<li>Xác định đây là một thẻ HTML để trình bày, toàn bộ được nội dung của file html đều nằm trong cặp thẻ này<br>
+								<p margin-left=40>Cú pháp:<br/>&lthtml></p>
+								<br/><p margin-left=40>&lt/html></p>
+								</li>
+								<li>Các tài liệu không nằm trong thẻ này như những tệp tin văn bản bình thường</li>
+							</ul>
+						</li>
+						<li>Thẻ head
+							<ul>
+								<li>Thẻ head dùng để xác định phần mở đầu cho tài liệu, cùng trình duyệt thực thi nhận dạng và phân bổ.
+								</li>
+								<li>Cú pháp
+									<br/><p>&lthead></p>
+									<br/><p>&lt/head></p>
+								</li>
+								<li>Thẻ Title: cặp thẻ này chỉ sư dụng trong phần head, dùng để thể hiện tên trên tab trình duyệt.
+								<br/>Cú pháp: &lttitle> Tiêu đề tài liêu&lt/title>
+								</li>
+							</ul>
+						</li>
+						<li>Thẻ Body
+							<ul>
+								<li>Nội dung: Thẻ body sử dụng để xác định nội dung chính của tài liệu, chứa các thông tin được định dangh nhất định và nội dùng hiển thị trên trang web.
+								</li>
+								<li>Cú pháp
+									<br/><p>&ltbody></p>
+									<br/><p>&lt/body></p>
+								</li>
+								<li>Các thuộc tính chính:<br/>
+									<table border="1" cellspacing="0" width="800" height="360" cellpadding="5">
+										<tr>
+											<td width="150">Thuộc tính</td>
+											<td>Ý nghĩa</td>
+											<td>Ví dụ</td>
+										</tr>
+										<tr>
+											<td>brcolor="color"</td>
+											<td>Thiết lập màu nền trang</td>
+											<td><i>&ltbody bgcolor="#00FF00"></i></td>
+										</tr>
+										<tr>
+											<td>background="url"</td>
+											<td>Thiết lập ảnh nền trang</td>
+											<td><i>&ltbody background="star.jpg"></i></td>
+										</tr>
+										<tr>
+											<td>leftmargin="n"<br/>
+												rightmargin="n"<br/>
+												topmargin="n"
+											</td>
+											<td>Thiết lập canh lề trái, phải và trên (đơn vị pixel)</td>
+											<td><i>&ltbody leftmargin="10"></i><br/>
+												<i>&ltbody rightmargin="10"></i><br/>
+												<i>&ltbody topmargin="10"></i>
+											</td>
+										</tr>
+										<tr>
+											<td>text="color"</td>
+											<td>Thiết lập màu chữ văn bản</td>
+											<td><i>&ltbody text="#00FF00"></i></td>
+										</tr>
+										<tr>
+											<td>alink="color"<br/>
+												vlink="color"<br/>
+												link="color"
+											</td>
+											<td>Xác định màu cho các siêu liên kết trong văn bản(active link, visited link, link)
+											</td>
+											<td><i>&ltbody link="#00FF00" vlink="#FF0000" alink="#0000fff"></i>
+											</td>
+										</tr>
+									</table>
+								</li>
+							</ul></li>
+					</ol>
+				</li>
+				<li><b>Một số thẻ định dạng văn bản</b>
+					<table border=1 border-color="#483B33" width=900 cellspacing="0" cellpadding="5">
+						<tr align="center" height=40>
+							<td width="100">Name tag</td>
+							<td width="50">Type</td>
+							<td width="140">Syntax</td>
+							<td>Decreption</td>
+						</tr>
+						<tr>
+							<td><a href="#" target="_blank">Thẻ Paragraph</a></td>
+							<td>Kép</td>
+							<td>&ltp>....&lt/p></td>
+							<td>Định dạng đoạn văn bản, ngắt đoạn khi kết thúc.</td>
+						</tr>
+						<tr>
+							<td><a href="#" target="_blank">Thẻ header</a></td>
+							<td>Kép</td>
+							<td>&lthn>....&lt/hn></td>
+							<td>Chữ đề mục in đậm, cỡ giảm dần từ n=1 tới n=6. Thông thường đề mục cấp 5 và 6 có kích thước nhỏ hơn văn bản thông thường.</td>
+						</tr>
+						<tr>
+							<td>Thẻ xuống dòng</td>
+							<td>Đơn</td>
+							<td>&ltbr><br/>(&ltbr/>)</td>
+							<td>Ngắt sang dòng mới.(File html sẽ không hiểu những kí tự khoảng trắng trong đoạn code)</td>
+						</tr>
+						<tr>
+							<td>Thẻ căn giữa</td>
+							<td>Kép</td>
+							<td>&ltcenter>...&lt/center></td>
+							<td>Căn giữa nội dung bên trong thẻ. Từ văn bản tới hình ảnh hay âm thanh.</td>
+						</tr>
+						<tr>
+							<td><a href="" tager="_blank">Thẻ Pre</a></td>
+							<td>Kép</td>
+							<td>&ltpre>...&lt/pre></td>
+							<td>Giữ nguyên định dạng từ file html trên trang web(Trong thẻ pre cho phép hiểu các kí tự khoảng trắng).</td>
+						</tr>
+						<tr>
+							<td>Thẻ chỉ số</td>
+							<td>Kép</td>
+							<td>+)&ltsup>...&lt/sup><br />+)&ltsub>...&lt/sub></td>
+							<td>Chỉ số trên(Cỡ chữ nhỏ hơn và nằm ở trên)<br />Chỉ số dưới(Cỡ chữ nhỏ hơn và nằm ở bên dưới)</td>
+						</tr>
+					</table>
+				
+				</li>
+				<li><b>Các thẻ định dạng danh sách</b>
+					<table border="1" width="900" cellpadding="10" cellspacing="0">
+						<tr>
+							<td width="150">Kiểu danh sách</td>
+							<td width="350">Cú pháp</td>
+							<td>Mô tả</td>
+						</tr>
+						<tr>
+							<td>Danh sách không sắp xếp ul<br />(Thông thường)</td>
+							<td>&ltul type="square"/"circle"/"disc"><br />
+									&ltli>...&lt/li><br />
+									&ltli>...&lt/li><br />
+									.......<br />
+								&lt/ul>
+							</td>
+							<td>Tạo một danh sách không đánh số, để phân biệt với danh sách đánh số ol. ul có thể được dùng với các bullet khác. Danh sách có thể bao bọc danh sách khác
+						</tr>
+						<tr>
+							<td>Danh sách sắp xếp ol</td>
+							<td>&ltol type="1"/"a"/"A"/"i"/"I" start="n"><br />
+									&ltli>...&lt/li><br />
+									&ltli>...&lt/li><br />
+									.......<br />
+								&lt/ol>
+							</td>
+							<td>Tao một danh sách có các bullet dạng sắp xếp 123, abc, ABC, i ii iii, I II III. start để bắt đầu cho bullet từ số thứ n.
+						</tr>
+						<tr>
+							<td>Danh sách thực đơn menu</td>
+							<td>....</td>
+							<td>Phân cấp dạng menu,...</td>
+						</tr>
+						<tr>
+							<td>Danh sách phân cấp</td>
+							<td>...</td>
+							<td>Phân cấp thư mục, ...</td>
+						</tr>
+						<tr>
+							<td>Danh sách định nghĩa</td>
+							<td>...</td>
+							<td>.....</td>
+						</tr>
+					</table>
+				</li>
+				<li><b>Các thẻ định dạng kí tự</b>
+					<p>1. Danh sách các thẻ định dạng kí tự(Đều là những thẻ kép).</p>
+					<table border="1" width="900" cellpadding="10" cellspacing="0">
+						<tr>
+							<td with="100">Type</td>
+							<td width="350">Syntax</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>In đậm</td>
+							<td>&ltb>...&lt/b><br />&ltstrong>...&lt/strong></td>
+							<td>Đều in đậm chữ.</td>
+						</tr>
+						<tr>
+							<td>In nghiêng</td>
+							<td>&lti>...&lt/i><br />&ltem>...&lt/em></td>
+							<td>Đều in nghiêng chữ</td>
+						</tr>
+						<tr>
+							<td>In chữ gạch chân</td>
+							<td>&ltu>...&lt/u></td>
+							<td>Gạch chân ở dưới chữ</td>
+						</tr>
+						<tr>
+							<td>Đánh dấu</td>
+							<td>&ltdfn>...&lt/dfn></td>
+							<td>Đánh dấu đoạn văn bản</td>
+						</tr>
+						<tr>
+							<td>Gạch nganh chữ</td>
+							<td>&lts>...&lt/s><br />&ltstrike>...&lt/strike></td>
+							<td>Gạch nganh những chữ được định dạng đó.</td>
+						</tr>
+						<tr>
+							<td>Tăng cỡ chữ</td>
+							<td>&ltbig>...&lt/big></td>
+							<td>Tăng cỡ chữ, có thể sử dụng lông nhau để tăng thêm nhưng có ghới hạn của trình duyệt.</td>
+						</tr>
+						<tr>
+							<td>Giảm cỡ chữ</td>
+							<td>&ltsmall>...&lt/small></td>
+							<td>Công dụng ngược với tăng cỡ chữ</td>
+						</tr>
+						<tr>
+							<td>Font chữ</td>
+							<td>&ltfont>...<&lt/font></td>
+							<td>Chọn các thuộc tính định dạng sau: face="fontname" size="fontsizr" color="color".</td>
+						</tr>
+					</table>
+					<p>2. Mã kí tự HTML(html entities)</p>
+					<p>Mã kí tự đặc biệt dùng để hiển thị các thẻ, kí tự trong html lên trang web.<br/>Có thể tìm kiếm các mã với từ khoá html entities.<br />Ví dụ như muốn hiển thị kí tự "&lt" lên web thì trong file html phải gõ mã gồm ba kí tự & l t liền nhau.
+				</li>
+			</ol>
+		</div>
+			
+	</div>
+	<div class="footpage" >
+		<h3>Contact me</h3>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>: Hoàng Văn Phú</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: hoangvanphu98@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td>: 0967669751</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:Gia Khánh - Gia Lộc - Hải Dương</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

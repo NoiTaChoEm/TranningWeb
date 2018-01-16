@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML Media</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Tutorial HTML</h1>
+	<hr/><hr/><hr/><hr/>
+	<div class="mainmenu">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="introduction.html"><li>Introduction</li></a>
+			<a href="htmltags.html"><li>Html Tag</li></a>
+			<a href="htmllinks.html"><li>Html Link</li></a>
+			<a href="htmlmedia.html"><li>Html Media</li></a>
+			<a href="htmlframe.html"><li>Frame-Iframe</li></a>
+			<a href="htmltable.html"><li>Html Table</li></a>
+			<a href="htmlform.html"><li>Html Form</li></a>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="namelession">
+			<h1>Media</h1>
+		</div>
+		<div class="data">
+			<ol type="I">
+				<li><b>Hình ảnh trên trang web</b>
+				<ol type="1">
+					<li>Các loại ảnh
+						<ul>
+							<li>GIF(Graphics Interchange Format):Được sử dụng phổ biến nhất trong các file html, dễ chuyển tải. ngay cả khi kết nối chậm, được hỗ trợ 256 màu.</li>
+							<li>JPEG(Joint PhotoGraphic Expert Group): Loại ảnh nén mất thông tin, tuy nhiên trong quá trình phát lại thì ảnh được phục hồi gần như ảnh gốc, được hỗ trợ hơn 16 triệu màu, thường được sử dụng cho các ảnh thưc.(Có phần mở rông; jpg)</li>
+							<li>PNG(Portable Network Graphics): Loại ảnh nén không mất dữ liệu</li>
+						</ul> 
+					</li>
+					<li>Chèn hình ảnh<br />
+						<p>Cú pháp: &ltimg src="url" /></p>
+					</li>
+					<li>Các thuộc tính
+						<table border="1">
+							<tr>
+								<td>Attibute</td>
+								<td>Value</td>
+								<td>Description</td>
+							</tr>
+							<tr>
+								<td>src</td>
+								<td>url</td>
+								<td>Đường dẫn tới file ảnh và tên ảnh</td>
+							</tr>
+							<tr>
+								<td>alt</td>
+								<td>message</td>
+								<td>Mô tả ngắn gọn cho hiển thị</td>
+							</tr>
+							<tr>
+								<td>width<br />height</td>
+								<td>lenght</td>
+								<td>Đặt kích thước cho hình ảnh(px), thường chỉ dùng một trong hai chiều</td>
+							</tr>
+							<tr>
+								<td>align</td>
+								<td>"left"/"right"/"middle"/"bottom"/"top"</td>
+								<td>Canh lề cho ảnh theo chiều văn bản xung quanh</td>
+							</tr>
+							<tr>
+								<td>border</td>
+								<td>n</td>
+								<td>Đặt kích thước viền với độ rông n px</td>
+							</tr>
+							<tr>
+								<td>hspace<br />vspace</td>
+								<td>n</td>
+								<td>Định khoảng cách trống xung quanh ảnh theo 2 chiều dọc và ngang(px)</td>
+							</tr>
+						</table>
+					</li>
+					<li>Mở rộng
+					<ul>
+						<li>Bố cục hình ảnh với văn bản: Canh lề khi dàn văn bản xung quanh một ảnh sẽ tác động tới tất cả các văn bản sau nó. Nên cần chèn một dòng đặc biệt: &ltbr clear="right"/"left"/"all" />. Thuộc tính clear trong thẻ BR xoá lề do hình ảnh chèn vào.</li>
+						<li>Sử dụng hình ảnh làm liên kết
+						<ul>
+							<li>Thường thấy như Logo, Slogan,.. hoặc chuyển trang xem ảnh kích thước chuẩn</li>
+							<li>Cú pháp: <i>&lta href="url">&ltimg src="url.image" />&lt/a></i></li>
+						</ul>
+						</li>
+						<li>Bản đồ ảnh
+						<ul>
+							<li>Là một ảnh được chia thành các phần, mỗi phầnlà một đối tượng cho người lập trình thiết lập tác động. Có thể chèn lên đối tượng đó là một đường dẫn.</li>
+							<li>Cách tạo: trước hết chèn một hình ảnh vào trang và đặt nhãn dán cho hình ảnh đó:<br />
+							<i>&ltimg usemap="#label" src="url/imaga" /><br />
+							&ltmap name="label1"><br />&ltarea shape="type" coords="..." href="url/html" /><br />&lt/map></i></li>
+							<li>Trong đó:
+							<ul>
+								<li>label: tên của bản đồ ảnh</li>
+								<li>type: hình dạng của vùng ảnh: "rect"(Chữ nhật), "circle"(Tròn), Poly(Đa giác).</li>
+								<li>coords: toạ độ của hình: tính bằng các cặp số: rect: "(x1,y1,x2,y2)"-toạ độ hai đỉnh chéo; cirle: "(x,y,r)"-Toạ độ tâm và bán kính; poly: "(x1,y1,x2,y2,x3,y4,...)"-Là toạ độ các đỉnh.</li>
+							</ul>
+							</li>
+						</ul>
+					</ul>
+					</li>
+					<li>Hình nền
+					<ul>
+						<li>Có thể sử dụng như một hình nền làm nổi bật trang</li>
+						<li>Sử dụng thuộc tính background="url" có trong một số thẻ như body,...</li>
+					</ul>
+				</ol></li>
+				<li>Âm thanh và hình ảnh<ol>
+					<li>Âm thanh
+					<ul>
+						<li>Cú pháp:<br />Cách 1: <i>&ltaudio src="url" controls>Comment&lt/audio></i><br />Cách2: <i>&ltaudio controls="controls"> &ltsource src="url" type="..."> &lt/audio></i></li>
+						<li>Các thuộc tính:<br />
+						<table border="1">
+							<tr>
+								<td>autoplay="autoplay"</td>
+								<td>Âm thanh tự chạy khi load tới trang</td>
+							</tr>
+							<tr>
+								<td>autobuffer="autobuffer"</td>
+								<td>Âm thanh tự động đệm ngay cả khi không thiết lâp autoplay</td>
+							</tr>
+							<tr>
+								<td>controls="controls"</td>
+								<td>Thiết lập bảng điều khiển cho audio</td>
+							</tr>
+							<tr>
+								<td>loop="loop"</td>
+								<td>Tự động lặp âm thânh khi kết thúc</td>
+							</tr>
+							<tr>
+								<td>preload="preload"</td>
+								<td>Xác định âm thanh có chạy không khi tải trang</td>
+							</tr>
+							<tr>
+								<td>src="url"</td>
+								<td>Đường dẫn tới file âm thanh</td>
+							</tr>
+							<tr>
+								<td>type="audio/format"</td>
+								<td>Định dạng file âm thanh format nhận hai giá trị sau: mpeg với mp3, wav với wav</td>
+							</tr>
+						</table>
+						</li>
+					</ul>
+					</li>
+					<li>Video
+					<ul>
+						<li>Cú pháp:<br />Cách 1: <i>&ltvideo src="url" controls>Comment&lt/video></i><br />Cách2: <i>&ltvideo controls="controls"> &ltsource src="url" type="..." /> &lt/video></i></li>
+						<li>Các thuộc tính:<br />
+						<table border="1">
+							<tr>
+								<td>autoplay="autoplay"</td>
+								<td>Âm thanh tự chạy khi load tới trang</td>
+							</tr>
+							<tr>
+								<td>muted="muted"</td>
+								<td>Tắt âm thanh đầu ra</td>
+							</tr>
+							<tr>
+								<td>controls="controls"</td>
+								<td>Thiết lập bảng điều khiển cho audio</td>
+							</tr>
+							<tr>
+								<td>loop="loop"</td>
+								<td>Tự động lặp âm thânh khi kết thúc</td>
+							</tr>
+							<tr>
+								<td>preload="preload"</td>
+								<td>Xác định âm thanh có chạy không khi tải trang</td>
+							</tr>
+							<tr>
+								<td>src="url"</td>
+								<td>Đường dẫn tới file âm thanh</td>
+							</tr>
+							<tr>
+								<td>height/width="n"</td>
+								<td>Chiều cao hoặc rộng cho video(pixel)</td>
+							</tr>
+							<tr>
+								<td>Poster</td>
+								<td>Hiển thị hình ảnh đại diện cho video</td>
+							</tr>
+							<tr>
+								<td>type="audio/format"</td>
+								<td>Định dạng file âm thanh format nhận hai giá trị sau: mpeg với mp3, wav với wav</td>
+							</tr>
+						</table>
+						</li>
+					</ul>
+					</li>
+					<li>Lưu ý
+					<ul>
+						<li>Các thẻ trên là của html5. Khác với phiên bản html4 sử dụng các thẻ: object, embed, iframe để chèn hình ảnh và âm thanh.<br />
+						<i>&ltobject data="flash_video.swf">&lt/object><br />&ltembed src="flash_video.swf" /></i></li>
+						<li>Phương pháp nhúng video, audio từ các nguồn khác: youtube, ... Khi link nhúng là iframe, ta chỉ cần copy và past vào file html.</li>
+					</ul>
+					</li>
+				</ol></li>
+			</ol>
+		</div>
+	</div>
+	<div class="footpage" >
+		<h3>Contact me</h3>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>: Hoàng Văn Phú</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: hoangvanphu98@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td>: 0967669751</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:Gia Khánh - Gia Lộc - Hải Dương</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

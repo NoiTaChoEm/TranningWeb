@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML Table</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Tutorial HTML</h1>
+	<hr/><hr/><hr/><hr/>
+	<div class="mainmenu">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="introduction.html"><li>Introduction</li></a>
+			<a href="htmltags.html"><li>Html Tag</li></a>
+			<a href="htmllinks.html"><li>Html Link</li></a>
+			<a href="htmlmedia.html"><li>Html Media</li></a>
+			<a href="htmlframe.html"><li>Frame-Iframe</li></a>
+			<a href="htmltable.html"><li>Html Table</li></a>
+			<a href="htmlform.html"><li>Html Form</li></a>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="namelession">
+			<h1>Table - Format widt table</h1>
+		</div>
+		<div class="data">
+		<ol type="I">
+			<li>Bảng
+				<ol type="1">
+					<li>Giới thiệu:<br />Không đơn thuần là một bảng. Bảng được sử dụng để tạo các văn bản dạng cột, hoặc phân chia trang thành nhiều ô khác nhau với thao tác gộp xoá ô, rất tiện lợi trong trình bày và thiết kế trang</li>
+					<li>Cú pháp<pre><i>&lttable>
+    &lttr>
+    	&ltth>Tiêu đề 1&lt/th>
+  		...
+    	&ltth>Tiêu đề n&lt/th>
+    &lt/tr>
+    &lttr>
+    	&lttd>Nội dung ô&lt/td>
+		...
+        &lttd>Nội dung ô&lt/td>
+    &lt/tr>
+&lt/table>
+</i></pre>
+					<span>+Trong đó:
+					<ul>
+						<li>Thẻ table: định ngĩa một bảng</li>
+						<li>Thẻ tr: định nghĩa một dòng</li>
+						<li>Thẻ th: định nghĩa một ô tiêu đề(Tiêu đề cho cột)</li>
+						<li>Thẻ td: định nghĩa một ô chứa nội dung</li>
+					</ul></span></li>
+					<li>Các thuộc tính
+						<ol type="a">
+							<li>Thuộc tính của bảng(Table Attribute)
+							<table border="1" width="800">
+								<tr>
+									<td>border="n"</td>
+									<td>Độ dày đường viền</td>
+								</tr>
+								<tr>
+									<td>bordercolor="color"</td>
+									<td>Màu của đường biền</td>
+								</tr>
+								<tr>
+									<td>bgcolor="color"</td>
+									<td>Đặt màu nền</td>
+								</tr>
+								<tr>
+									<td>bordercolordark="color"<br />bordercolorlight="color"</td>
+									<td>Tạo bóng: đổ ở cạnh dưới, phải của bảng;<br />Bóng đổ ở cạnh trên, trái của bảng</td>
+								</tr>
+								<tr>
+									<td>width="l"<br />height="h"</td>
+									<td>Định độ rộng, chiều cao của bảng</td>
+								</tr>
+								<tr>
+									<td>cellpadding="n"</td>
+									<td>Khoảng cách của khung ô với nội dung trong ô</td>
+								</tr>
+								<tr>
+									<td>cellspacing="n"</td>
+									<td>Khoảng cách giữa các ô</td>
+								</tr>
+								<tr>
+									<td>align="const"</td>
+									<td>Căn lề theo phương ngang với cácgiá trị: left, right, center, justify</td>
+								</tr>
+								<tr>
+									<td>valign="const"</td>
+									<td>Căn lề theo phương đứng với các giá trị: top, midde, bottom</td>
+							</table></li>
+							<li>Thuộc tính của ô(td - Table data)
+							<table border="1", width="800">
+								<tr>
+									<td>rowspan="n"</td>
+									<td>Gộp n cột cạnh nhau</td>
+								</tr>
+								<tr>
+									<td>colspan="n"</td>
+									<td>Gộp n dòng với nhau</td>
+								</tr>
+							</table></li>
+						</ol></li>
+				</ol>
+			</li>
+			<li>Trình bày trang
+				<ul>
+					<li>Dùng table là một cách để định dạng trang web thành các khối. Ví dụ như chia thành các cột giống báo, chia và gộp các cột lại để tạo được các khung có kích cỡ khác nhau,... Bởi mỗi cell trong table trở thành 1 khung độc lập.</li>
+					<li>Cách tạo: Sử dụng tạo bảng kết hợp với thuộc tính colspan, rowspan của ô để tạo thành các khung, và định kích cỡ cho chúng với width và height.</li>
+				</ul>
+			</li>
+		</ol>
+		</div>
+	</div>
+	<div class="footpage" >
+		<h3>Contact me</h3>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>: Hoàng Văn Phú</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: hoangvanphu98@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td>: 0967669751</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:Gia Khánh - Gia Lộc - Hải Dương</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

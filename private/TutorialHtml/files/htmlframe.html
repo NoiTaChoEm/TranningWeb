@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML Frame</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Tutorial HTML</h1>
+	<hr/><hr/><hr/><hr/>
+	<div class="mainmenu">
+		<ul>
+			<a href="../index.html"><li>Home</li></a>
+			<a href="introduction.html"><li>Introduction</li></a>
+			<a href="htmltags.html"><li>Html Tag</li></a>
+			<a href="htmllinks.html"><li>Html Link</li></a>
+			<a href="htmlmedia.html"><li>Html Media</li></a>
+			<a href="htmlframe.html"><li>Frame-Iframe</li></a>
+			<a href="htmltable.html"><li>Html Table</li></a>
+			<a href="htmlform.html"><li>Html Form</li></a>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="namelession">
+			<h1>Frame</h1>
+		</div>
+		<div class="data">
+			<ol type="I">
+				<li><b>Định ngĩa và cách dùng</b>
+					<ul>
+						<li>Định nghĩa: Frame định nghĩa một cửa sổ riêng(khung), cho phép người dùng truy cạp cùngmột lúc có thể xem nhiều trang mà không cần cuốn màn hình, mỗi trang web trong một khung riêng.</li>
+						<li>Cách dùng: Nếu sử dùng Frame thì sẽ không dùng thẻ Body.</li>
+						<li>Lưu ý: Frame không được hỗ trợ trên HTML5.</li>
+					</ul>
+				</li>
+				<li><b>Các tạo Frame Layout</b><br />
+				+Frame Layout là một trang web độc lập, bao gồm các khung frame.<br />
+				+Cú pháp:<pre><i>&lthtml>
+    &lthead>
+    	...
+    &lt/head>
+    &ltframeset>
+        Frame Definitions
+    &lt/frameset>
+&lt/html></i></pre>
+				+Các dạng frame:
+				<ol type="a">
+					<li>Tạo frame theo hàng<br/>-Cú pháp:<pre><i>&ltframeset rows="a,b,*,...">
+    &ltframe name="name1" src="filehtml1.html" />
+    &ltframe name="name2" src="filehtml2.html" />
+    ...
+&lt/frameset></i></pre>
+					-Trong đó:<ul>
+						<li>a,b,* là độ cao của các hàng khung 1,2,3,...(pixel, %), * là đặt độ cao auto</li>
+						<li>name: tên khung frame</li>
+						<li>filehtml.hmtl: địa chỉ trang web xuất hiện trong khung</li>
+					</ul>
+					</li>
+					<li>Tạo frame theo cột<br/>-Cú pháp:<pre><i>&ltframeset cols="a,b,*,...">
+    &ltframe name="name1" src="filehtml1.html" />
+    &ltframe name="name2" src="filehtml2.html" />
+    ...
+&lt/frameset></i></pre>
+					-Trong đó:<ul>
+						<li>a,b,* là độ cao của các hàng khung 1,2,3,...(pixel, %), * là đặt độ cao auto</li>
+						<li>name: tên khung frame</li>
+						<li>filehtml.hmtl: địa chỉ trang web xuất hiện trong khung</li>
+					</ul>
+					</li>
+				</ol></li>
+				<li>Các thuộc tính của Frame
+				<table width="800" border="1" cellspacing="0">
+					<tr>
+						<td>noresize="noresize"</td>
+						<td>Chỉ định không thể thay đổi kích thước khung</td>
+					</tr>
+					<tr>
+						<td>scrolling="auto"/"yes"/"no"</td>
+						<td>Chỉ định xuất thanh cuộn khi nội dung quá dài/ luôn xuất hiện thanh cuộn/ không xuất hiện thanh cuộn.</td>
+					</tr>
+					<tr>
+						<td>frameborder="0"/"1"</td>
+						<td>Chỉ định độ rộng viền quanh khung</td>
+					</tr>
+					<tr>
+						<td>marginheight="n"<br />marginwidth="n"</td>
+						<td>Chỉ định margin-top và margin-bottom cho frame(pixcel)</td>
+					</tr>
+					<tr>
+						<td>longdesc="url"</td>
+						<td>Chỉ định một trang có chứa nội dung mô tả cho frame</td>
+					</tr>
+				</table>
+				</li>
+				<li>Liên kết Frame
+					<ul>
+						<li>Trang đầu tiên của khung được chỉ ra trong thuộc tính srcc, ta có thể điều chỉnh các trang web khác cùng xuất hiện trong khung đó bằng cách chỉ ra vị trí trang đích(target)</li>
+						<li>Tại trang muốn tạo liên kết với khung: <i>&lta href="pae.html" target="name">Nhã mục liên kết&;t/a></i></li>
+						<li>Trong đó: target="name" là tên của khung mà trang liên kết tới trong trang page.tml.</li>
+						<li>Nếu có nhiều liên kết đến các trang xuất hiện trong cùng một khun thì thuộc tính target mặc định đặt trong tag Base: <i>&lthead> &ltbase target="name" /> &lt/head></i></li>
+					</ul>
+				</li>
+				<li>Phần tử NoFrame<br />
+					+Được sử dụng để chỉ nội dung thay thế cho frame khi browser không hỗ trợ frame<br />+Cú pháp:<pre><i>&lthtml>
+    &lthead>
+        ...
+    &lt/head>
+    &ltframeset>
+        ...
+    &lt/frameset>
+    &ltnoframe>
+        &ltbody>
+            ...
+        &lt/body>
+    &lt/noframe>
+&lt/html></i></pre></li>
+				<li>Thẻ IFrame
+				<ul>
+					<li>Sử dụng để trộn văn bản và khung trong cùng một tài liệu html, nếu trình duyệt không hỗ trợ iframe thì sẽ bị trả lại</li>
+					<li>Tạo một khung trong trang web với tag Iframe tại vị trí muốn chèn</li>
+					<li>Cú pháp:<pre><i>&ltiframe src="page.html" name="name" width="x" height="y" frameborder="0">
+    Nội dung thay thế khi browser không hỗ trợ iframe
+&lt/iframe</i></pre></li>
+					<li><i>Lưu ý: Iframe Là một kĩ thuật nhúng trong html5</i></li>
+				</ul>
+				</li>
+			</ol>
+		</div>
+			
+	</div>
+	<div class="footpage" >
+		<h3>Contact me</h3>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td>: Hoàng Văn Phú</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: hoangvanphu98@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td>: 0967669751</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td>:Gia Khánh - Gia Lộc - Hải Dương</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

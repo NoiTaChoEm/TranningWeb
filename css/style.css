@@ -1,2 +1,35 @@
 /* CSS Document */
 
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	text-align: center;
+}
+
+div.wrap{
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 20px;
+	width: 86%;
+	border: 1px solid #000000;
+	box-shadow: 1px 2px 2px 1px #00001f;
+	background-color: #ABE8F0;
+}
+
+div.footer{
+	height: auto;
+	width: 100%;
+	border-top: 2px double #740B0C;
+	background-color: #FDD5D5;
+	border-bottom: 2px double #740B0C;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 15px;
+}
